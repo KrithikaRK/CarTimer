@@ -73,4 +73,4 @@ From command: Run php artisan command to test
 
 From Postman:
 
-	
+![cartimer_postman](https://user-images.githubusercontent.com/43498569/208035542-54cae03b-53cd-4b5c-bc63-743d4d6a0d04.png)
