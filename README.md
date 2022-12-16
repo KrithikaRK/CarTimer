@@ -64,7 +64,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 
-
+# Assignment 1
 ## How to Test
 
 From command: Run php artisan command to test
@@ -74,3 +74,14 @@ From command: Run php artisan command to test
 From Postman:
 
 ![cartimer_postman](https://user-images.githubusercontent.com/43498569/208035542-54cae03b-53cd-4b5c-bc63-743d4d6a0d04.png)
+
+# Assignment 2
+### Tables:
+    employees: emp_id, emp_name
+    employee_details: id, emp_id, salary
+
+### Problem statement: 
+    Find the 2nd highest salaried employee.
+
+### Query:
+    select e.*, ed.salary as salary from employees e left join employee_details ed on e.emp_id = ed.emp_id where ed.salary < (select max(salary) from employee_details) order by salary desc limit 1;
